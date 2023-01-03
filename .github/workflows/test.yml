@@ -32,6 +32,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: Setup Prod
+        run: git remote add prod dig@31.220.61.138:domains/webhooks.digitalbrilliancehour.com/prod.git
          
       - name: Push to Prod 
         run: git push prod master
